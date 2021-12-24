@@ -1,0 +1,49 @@
+@mixin lightBackground {
+  background-color: wheat;
+}
+
+@mixin lightMode {
+  background-color: wheat;
+  position: relative;
+  width: auto;
+  height: auto;
+  border: red 5px solid;
+}
+@mixin darkMode {
+  background-color: wheat;
+}
+@mixin colorMode {
+  background-color: wheat;
+}
+
+// == DIVS==
+@mixin background {
+  width: $background-width;
+  height: $background-height;
+}
+@mixin firstBorder {
+  width: $first-box-width;
+  height: $first-box-height;
+  border: $first-border;
+  border-radius: $first-border-radius;
+  position: relative;
+}
+@mixin secondBorder {
+  width: $second-box-width;
+  height: $second-box-height;
+  border: $second-border;
+  border-radius: $second-border-radius;
+}
+@mixin thirdBorder {
+  width: $third-box-width;
+  height: $third-box-height;
+  border: $third-border;
+  border-radius: $third-border-radius;
+}
+@mixin innerCircle {
+  width: $inner-circle-width;
+  height: $inner-circle-height;
+  border: $inner-circle-border;
+  border-radius: $inner-circle-border-radius;
+  background-color: white;
+}
