@@ -1,0 +1,44 @@
+// === COLORS ===
+$text-color: #222222;
+$body-background-color: #fff;
+$theme-color: #170a48;
+$secondary-color: #f27731;
+$ternary-color: #ccf962;
+$link-color: $secondary-color;
+$menu-item-color: white;
+
+// === FONTS ===
+$text-font: 'Alegreya Sans', Arial, sans-serif;
+$headline-font: 'Titillium Web', Georgia, serif;
+
+// === SIZES ===
+$background-width: 100vw;
+$background-height: 100vh;
+
+$first-box-width: 500px;
+$first-box-height: 400px;
+
+$second-box-width: 400px;
+$second-box-height: 350px;
+
+$third-box-width: 200px;
+$third-box-height: 200px;
+
+$inner-circle-width: 10px;
+$inner-circle-height: 10px;
+
+$header-height: 60px;
+$footer-height: 90px;
+
+//function
+
+// === Borders ===
+$first-border: white 1px solid;
+$second-border: white 10px solid;
+$third-border: white 10px solid;
+$inner-circle-border: white 5px solid;
+
+$first-border-radius: 60px;
+$second-border-radius: 120px;
+$third-border-radius: 50%;
+$inner-circle-border-radius: 50%;
