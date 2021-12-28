@@ -1,6 +1,12 @@
 @mixin theme_light {
   background-color: wheat;
 }
+@mixin theme_dark_background {
+  background-color: wheat;
+}
+@mixin theme_color_background {
+  background-color: wheat;
+}
 
 @mixin lightMode {
   background-color: wheat;
@@ -22,27 +28,35 @@
   height: $background-height;
 }
 @mixin Borders($width, $height, $border, $border-radius) {
-  width: $width;
-  height: $height;
-  border: $border;
-  border-radius: $border-radius;
+  width: ($width);
+  height: ($height);
+  border: ($border);
+  border-radius: ($border-radius);
 }
-@mixin secondBorder {
-  width: $second-box-width;
-  height: $second-box-height;
-  border: $second-border;
-  border-radius: $second-border-radius;
-}
-@mixin thirdBorder {
-  width: $third-box-width;
-  height: $third-box-height;
-  border: $third-border;
-  border-radius: $third-border-radius;
-}
-@mixin innerCircle {
-  width: $inner-circle-width;
-  height: $inner-circle-height;
-  border: $inner-circle-border;
-  border-radius: $inner-circle-border-radius;
-  background-color: white;
-}
+// @mixin firstBorder {
+//   @include Borders(
+//     $first-box-width,
+//     $first-box-width,
+//     $first-border,
+//     $first-border-radius
+//   );
+// }
+// @mixin secondBorder {
+//   width: $second-box-width;
+//   height: $second-box-height;
+//   border: $second-border;
+//   border-radius: $second-border-radius;
+// }
+// @mixin thirdBorder {
+//   width: $third-box-width;
+//   height: $third-box-height;
+//   border: $third-border;
+//   border-radius: $third-border-radius;
+// }
+// @mixin innerCircle {
+//   width: $inner-circle-width;
+//   height: $inner-circle-height;
+//   border: $inner-circle-border;
+//   border-radius: $inner-circle-border-radius;
+//   background-color: white;
+// }

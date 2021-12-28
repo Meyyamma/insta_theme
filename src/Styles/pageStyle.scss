@@ -38,10 +38,11 @@ p {
 .firstBorder {
   @include Borders(
     $first-box-width,
-    $first-box-width,
+    $first-box-height,
     $first-border,
     $first-border-radius
   );
+
   margin: auto;
   padding: auto;
   background: radial-gradient(
@@ -56,17 +57,33 @@ p {
 }
 
 .secondBorder {
-  @include secondBorder;
+  @include Borders(
+    $second-box-width,
+    $second-box-height,
+    $second-border,
+    $second-border-radius
+  );
   margin: 1.5em auto 2em auto;
   padding: auto;
 }
 .thirdBorder {
-  @include thirdBorder;
+  @include Borders(
+    $third-box-width,
+    $third-box-height,
+    $third-border,
+    $third-border-radius
+  );
   margin: 1.5em auto 2em auto;
   margin-top: 3.4em;
   padding: auto;
 }
 .innerCircle {
-  @include innerCircle;
+  @include Borders(
+    $inner-circle-width,
+    $inner-circle-height,
+    $inner-circle-border,
+    $inner-circle-border-radius
+  );
+  background-color: white;
   margin-left: auto;
 }
