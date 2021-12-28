@@ -1,4 +1,4 @@
-@mixin lightBackground {
+@mixin theme_light {
   background-color: wheat;
 }
 
@@ -9,7 +9,7 @@
   height: auto;
   border: red 5px solid;
 }
-@mixin darkMode {
+@mixin theme_dark {
   background-color: wheat;
 }
 @mixin colorMode {
@@ -21,12 +21,11 @@
   width: $background-width;
   height: $background-height;
 }
-@mixin firstBorder {
-  width: $first-box-width;
-  height: $first-box-height;
-  border: $first-border;
-  border-radius: $first-border-radius;
-  position: relative;
+@mixin Borders($width, $height, $border, $border-radius) {
+  width: $width;
+  height: $height;
+  border: $border;
+  border-radius: $border-radius;
 }
 @mixin secondBorder {
   width: $second-box-width;

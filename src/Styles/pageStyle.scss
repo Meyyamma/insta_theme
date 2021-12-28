@@ -1,34 +1,34 @@
 @import '/src/Partials/variables';
 @import '/src/Partials/mixins';
 
-body{
-    box-sizing: border-box;
-     color: cadetblue;
-     background: black;
- }
- p {
-        font-family: sans-serif;
-        font-size: x-large;
-    }
+body {
+  box-sizing: border-box;
+  color: cadetblue;
+  background: black;
+}
+p {
+  font-family: sans-serif;
+  font-size: x-large;
+}
 
 .dropDown {
-    position: relative;
-    text-align: center;
-    width: 13em;
-    height: 3em;
-    line-height: 3;
-    background: #FFDAB9;
-    border-radius: .25em;
-    border-width: .15em;
-    border-color: black;
-    box-shadow: 5px 10px sandybrown;
+  position: relative;
+  text-align: center;
+  width: 13em;
+  height: 3em;
+  line-height: 3;
+  background: #ffdab9;
+  border-radius: 0.25em;
+  border-width: 0.15em;
+  border-color: black;
+  box-shadow: 5px 10px sandybrown;
 }
 .dropDown:hover {
-    background-color:rgb(105, 221, 154)
+  background-color: rgb(105, 221, 154);
 }
 .dropDown:hover * {
-    color: white;
-    background-color: #F39C12;
+  color: white;
+  background-color: #f39c12;
 }
 
 .background {
@@ -36,10 +36,14 @@ body{
 }
 
 .firstBorder {
-  @include firstBorder;
+  @include Borders(
+    $first-box-width,
+    $first-box-width,
+    $first-border,
+    $first-border-radius
+  );
   margin: auto;
   padding: auto;
-  background-image: linear-gradient(to bottom right, red, blue);
   background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
