@@ -33,57 +33,61 @@ p {
 
 .background {
   @include background;
-}
+  // first Background
+  .firstBorder {
+    @include Borders(
+      $first-box-width,
+      $first-box-height,
+      $first-border,
+      $first-border-radius
+    );
 
-.firstBorder {
-  @include Borders(
-    $first-box-width,
-    $first-box-height,
-    $first-border,
-    $first-border-radius
-  );
+    margin: auto;
+    padding: auto;
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+    // Second Border
+    .secondBorder {
+      @include Borders(
+        $second-box-width,
+        $second-box-height,
+        $second-border,
+        $second-border-radius
+      );
+      margin: 1.5em auto 2em auto;
+      padding: auto;
+    }
 
-  margin: auto;
-  padding: auto;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
-}
+    // Third Border
+    .thirdBorder {
+      @include Borders(
+        $third-box-width,
+        $third-box-height,
+        $third-border,
+        $third-border-radius
+      );
+      margin: 1.5em auto 2em auto;
+      margin-top: 3.4em;
+      padding: auto;
 
-.secondBorder {
-  @include Borders(
-    $second-box-width,
-    $second-box-height,
-    $second-border,
-    $second-border-radius
-  );
-  margin: 1.5em auto 2em auto;
-  padding: auto;
-}
-.thirdBorder {
-  @include Borders(
-    $third-box-width,
-    $third-box-height,
-    $third-border,
-    $third-border-radius
-  );
-  margin: 1.5em auto 2em auto;
-  margin-top: 3.4em;
-  padding: auto;
-}
-.innerCircle {
-  @include Borders(
-    $inner-circle-width,
-    $inner-circle-height,
-    $inner-circle-border,
-    $inner-circle-border-radius
-  );
-  background-color: white;
-  margin-left: auto;
+      // Inner Circle
+      .innerCircle {
+        @include Borders(
+          $inner-circle-width,
+          $inner-circle-height,
+          $inner-circle-border,
+          $inner-circle-border-radius
+        );
+        background-color: white;
+        margin-left: auto;
+      }
+    }
+  }
 }
