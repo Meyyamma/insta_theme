@@ -1,34 +1,27 @@
-@import '/src/Partials/variables';
-@import '/src/Partials/mixins';
+@import "/src/Partials/variables";
+@import "/src/Partials/mixins";
 
-body{
-    box-sizing: border-box;
-     color: cadetblue;
-     background: black;
- }
- p {
-        font-family: sans-serif;
-        font-size: x-large;
-    }
+body {
+  display: flex;
+  box-sizing: border-box;
+  color: rgb(250, 186, 68);
+  background: black;
+  font-style: $headline-font;
+}
+p {
+  font-family: $headline-font;
+  font-size: x-large;
+}
 
 .dropDown {
-    position: relative;
-    text-align: center;
-    width: 13em;
-    height: 3em;
-    line-height: 3;
-    background: #FFDAB9;
-    border-radius: .25em;
-    border-width: .15em;
-    border-color: black;
-    box-shadow: 5px 10px sandybrown;
+  @include dropDown;
 }
 .dropDown:hover {
-    background-color:rgb(105, 221, 154)
+  background-color: rgb(105, 221, 154);
 }
 .dropDown:hover * {
-    color: white;
-    background-color: #F39C12;
+  color: white;
+  background-color: #f39c12;
 }
 
 .background {

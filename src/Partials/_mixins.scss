@@ -15,7 +15,17 @@
 @mixin colorMode {
   background-color: wheat;
 }
-
+// == NAV ==
+@mixin dropDown {
+  text-align: center;
+  width: 13em;
+  height: 3em;
+  line-height: 3;
+  background: #FFDAB9;
+  border-radius: .25em;
+  border-color: black;
+  box-shadow: 5px 10px sandybrown;
+}
 // == DIVS==
 @mixin background {
   width: $background-width;
