@@ -2,9 +2,9 @@
 @import "/src/Partials/mixins";
 
 @include theme_default;
-@include theme_light;
 @include theme_dark;
 @include theme_color;
+@include theme_light;
 
 body {
   box-sizing: border-box;
