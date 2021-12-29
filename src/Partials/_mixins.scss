@@ -1,67 +1,60 @@
 // === Default Theme(Light mode) ===
 @mixin theme_default {
-  body{
-    background-color: gray
+  .background_theme_default {
+    background-color: gray;
   }
 }
 
 // === First Theme(Light mode) ===
 @mixin theme_light {
-  body{
-  background-color: whitesmoke;
+  .background_theme_LightMode {
+    background-color: rgba(240, 224, 224, 0.822);
+    .firstBorder_theme_LightMode {
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+    }
   }
-  .background{
-    .firstBorder{
-  background: radial-gradient(
-      circle at 30% 107%,
-      #fdf497 0%,
-      #fdf497 5%,
-      #fd5949 45%,
-      #d6249f 60%,
-      #285aeb 90%
-    );
-  }
-}
 }
 
-// === Second Theme (Dark mode) ===
-@mixin theme_dark{
-  body{
-  background-color: #1c1d1f;
+@mixin theme_dark {
+  .background_theme_DarkMode {
+    background-color: black;
+    .firstBorder_theme_DarkMode {
+      background: radial-gradient(
+        circle at 30% 107%,
+        #e639c0 0%,
+        #4ddaec 5%,
+        #27e641 45%,
+        #dee201fd 60%,
+        hsl(310, 92%, 51%) 90%
+      );
+    }
   }
-  .background{
-    .firstBorder{
-  background: radial-gradient(
-      circle at 30% 107%,
-      #e639c0 0%,
-      #4ddaec 5%,
-      #27e641 45%,
-      #dee201fd 60%,
-      hsl(310, 92%, 51%) 90%
-    );
-  }
-}
 }
 
 // === Third Theme (Color mode) ===
 @mixin theme_color {
-  body{
+  .background_theme_ColorMode {
     background-color: red;
     //background-image: linear-gradient(cyan,yellow)
-    background-image: linear-gradient(to right, red, orange, yellow, green)
+    background-image: linear-gradient(to right, red, orange, yellow, green);
+    .firstBorder_theme_ColorMode {
+      background: radial-gradient(
+        circle at 30% 107%,
+        #18ee3b 0%,
+        hsl(337, 89%, 43%) 5%,
+        #e652c1ea 45%,
+        #ec10aadc 60%,
+        #2224bd 90%
+      );
+    }
   }
-  .background{
-    .firstBorder{
-  background: radial-gradient(
-    circle at 30% 107%,
-    #18ee3b 0%,
-    hsl(337, 89%, 43%) 5%,
-    #e652c1ea 45%,
-    #ec10aadc 60%,
-    #2224bd 90%
-  );
-  }
-}
 }
 
 // == NAV ==
@@ -72,7 +65,7 @@
   line-height: 3;
   background: #45c5ec;
   border-color: darkblue;
-  border-width: .3em;
+  border-width: 0.3em;
   border-radius: 7px;
   box-shadow: 5px 10px rgb(171, 212, 218);
 }

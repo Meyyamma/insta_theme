@@ -1,10 +1,5 @@
-@import "/src/Partials/variables";
-@import "/src/Partials/mixins";
-
-@include theme_default;
-@include theme_dark;
-@include theme_color;
-@include theme_light;
+@import '/src/Partials/variables';
+@import '/src/Partials/mixins';
 
 body {
   box-sizing: border-box;
@@ -13,9 +8,10 @@ body {
 p {
   font-family: sans-serif;
   font-size: x-large;
+  font-weight: bold;
 }
 .dropDown {
- @include dropDown
+  @include dropDown;
 }
 .dropDown:hover {
   background-color: rgb(105, 221, 154);
@@ -25,10 +21,13 @@ p {
   color: white;
   background-color: #f39c12;
 }
-
+@include theme_default;
+@include theme_light;
+@include theme_color;
+@include theme_dark;
 .background {
   @include background;
-  // first Background
+  // first Border
   .firstBorder {
     @include Borders(
       $first-box-width,
